@@ -978,9 +978,10 @@ def main():
     global propIdforuse
     temp = sys.stdout
     print("本脚本提供pushPlus、serverkey这两种推送方式,可以二选一或者全选，首次运行脚本请依次选择是否开启对应推送!\n由于server酱每日免费限额5条,若需开启推送,请首选pushPlus!\n")
-    getpushPlusToken()
-    getserverkey()
-    token = gettoken()
+    # getpushPlusToken()
+    # getserverkey()
+    # token = gettoken()
+    token = "eJx9UGmrm0AU/S/C6xcl7poJPIrJi9EYjUv2Usqo84xxy3M3pf+9k4aS96EULtwzZ2EO9ydR6iExYRlWZliKaFFJTAh2xIwkgiLqCisyC2QejAHDjQFFBJ84IIryWKAIv9y9EZNvPGCosSB8vxMufj+JJ+IEPHeHjg3Eua6v1YSmz+Kog3EG41GG4rqB+SgoMvpB0Vmch6i/L4Qr/T+SFlGcf30vygC91mWDvvgwSH40Zfr6J/fCKy+ciuefacw/SAwenz4AInDhbHMvzLIyxcks7sECQLFAvEvJXcIbfrZQ9tOEMZbrvzYTXxiLVRzlGKHlUCcb0HaD4vQ+WE2Toy9b8dSLhmUAXeOwsfxB7S8729Kipc1xfSB7QsgM/MZDYNXKJe+vHcDB4pQyx/KguWaO6utht7WKjeM2KBlgmxnHOPGZ2mhPFWwLMrjMs73qbrfdfC2H4cWvLjp0tVsc1mkdidNTH4m6QcK8Wpoi8Mbtol4ZKGvm+IozwZRWrr4XbutUIa+WVXyQMyndRmqcaztzMBtnpXiky0t7KTTVjmuT3JWYRaYbmrIN25scTS8mPZ+6WmUqvXcBpAbpZfiGDrO1Gs6cc3fbBGrme7fFibTa9Wxpm1Hvio32rmnrzGiKt5hNzyuDzkv7cBazQ23lGkAn6V0wnR0wyM7cLRZyIEgimbBS26V2ZTPKVj26UQ73fDMYN8/jyhPt6M7VNxTi12/kPPE7"
     getlatlongitude()
     getpropId_Coinnumber(token)
     sys.stdout = Logger(str(cwd)+r'/output.txt')
